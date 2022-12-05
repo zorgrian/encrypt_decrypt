@@ -14,10 +14,15 @@ sudo chmod -x encrypt_decrypt.sh
 4. Encrypt 
 
 ```bash
+
 ./encrypt_decrypt.sh -m enc -s "This is a sample string" -p SuperS3curePassw0rd!
+
 ```
+
 5. Decrypt
 
 ```bash
+
 ./encrypt_decrypt.sh -m dec -s "U2FsdGVkX1/mgl7Z+Y1cmNATJD/CnTHEFLlKhEwwUlpw8YYchYDoTAzMFGI20bIR" -p SuperS3curePassw0rd!
+
 ```
