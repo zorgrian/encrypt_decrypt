@@ -8,7 +8,16 @@ The script used the following parameters:
 1. Make sure Openssl is installed: https://www.howtoforge.com/tutorial/how-to-install-openssl-from-source-on-linux/
 2. Clone this repository
 3. Make the script executable
-   - ```sudo chmod -x encrypt_decrypt.sh```
-4. Run the script
-   - ```./encrypt_decrypt.sh -m enc -s "This is a sample string" -p SuperS3curePassw0rd!```
-   - ```./encrypt_decrypt.sh -m dev -s "U2FsdGVkX1/mgl7Z+Y1cmNATJD/CnTHEFLlKhEwwUlpw8YYchYDoTAzMFGI20bIR" -p SuperS3curePassw0rd!```
+```bash
+sudo chmod -x encrypt_decrypt.sh
+```
+4. Encrypt 
+
+```bash
+./encrypt_decrypt.sh -m enc -s "This is a sample string" -p SuperS3curePassw0rd!
+```
+5. Decrypt
+
+```bash
+./encrypt_decrypt.sh -m dec -s "U2FsdGVkX1/mgl7Z+Y1cmNATJD/CnTHEFLlKhEwwUlpw8YYchYDoTAzMFGI20bIR" -p SuperS3curePassw0rd!
+```
